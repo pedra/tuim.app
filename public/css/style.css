@@ -1,0 +1,192 @@
+:root {
+    --radius: 4px;
+    --ft-sz: 14px;
+    --bt-primary: #1c1cb7;
+    /*#0756b9;*/
+    --bt-primary-color: #ffffff;
+    --bt-secondary: #1d9e1d;
+    --bt-flat: #CCCCCC;
+    --bt-flat-color: #040086;
+    --bt-danger: #b71c1c;
+    --inp-primary: rgba(255, 255, 255, 0.65);
+    --inp-primary-color: #040086;
+}
+
+html,
+body,
+button,
+input,
+select,
+label,
+table,
+textarea {
+    font-size: var(--ft-sz);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background: url("https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?w=700") center/cover; */
+    background: url("/bg3.jpg") center/cover;
+    background-attachment: fixed;
+    margin: 0;
+    color: #fff;
+}
+
+.formulario {
+    border-radius: var(--radius);
+    background: rgba(0, 0, 0, .2);
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    width: max-content;
+}
+
+.form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: .3rem 2rem;
+}
+
+.form.row {
+    align-items: center;
+    flex-direction: row;
+}
+
+.form input[type=text],
+.form input[type=password],
+.form select {
+    min-width: 8rem;
+    min-height: 2rem;
+    border-radius: var(--radius);
+    margin: .3rem 0;
+    padding: 0 .5rem;
+    border: none;
+    color: var(--inp-primary-color);
+    background: var(--inp-primary);
+
+    /*TESTE*/
+    border-bottom: 1px solid rgb(108, 124, 108);
+    background: rgba(255, 255, 255, .8);
+}
+
+.form input[type=checkbox],
+.form input[type=radio] {
+    margin: 0 1rem 0 0;
+}
+
+.form label {
+    margin: .5rem .5rem 0 0;
+    display: flex;
+    align-items: center;
+}
+
+/** FORM ROW **/
+.form.row {
+    align-items: center;
+    flex-direction: row;
+}
+
+.form.row label {
+    margin: 0 .5rem 0 0;
+}
+
+
+/**
+    CONTROL BUTTON
+**/
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .3rem 2rem;
+    margin: 2rem 0 0 0;
+}
+
+.control.right {
+    justify-content: flex-end;
+}
+
+.control.center {
+    justify-content: center;
+}
+
+.control button {
+    min-width: 8rem;
+    min-height: 2.5rem;
+    border-radius: var(--radius);
+    margin: .5rem;
+    padding: 0 1rem;
+    border: none;
+    color: var(--bt-primary-color);
+    background: var(--bt-primary);
+    cursor: pointer;
+    opacity: .8;
+}
+
+.control button:last-child {
+    margin-right: 0;
+}
+
+.control button:first-child {
+    margin-left: 0;
+}
+
+.control button:hover {
+    opacity: 1;
+}
+
+.control button.bt-flat {
+    color: var(--bt-flat-color);
+    background: var(--bt-flat);
+}
+
+.control button.bt-danger {
+    background: var(--bt-danger);
+}
+
+.control button.bt-secondary {
+    background: var(--bt-secondary);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.card {
+    padding: 4em 6em;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 7px;
+    border-radius: 4px;
+}
+
+
+.acrylic {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.shadow {
+    border-radius: 1px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blue {
+    background: rgba(0, 77, 138, 0.5);
+}
+
+.white {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.white label {
+    color: #111111;
+}
+
+.red {
+    background: rgba(255, 0, 0, 0.5);
+}
