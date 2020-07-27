@@ -42,6 +42,18 @@
 
     <link rel="stylesheet" href="/css/style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171288641-1"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "bfd96a0d-6249-4d04-9c13-8098cb8d5d65",
+                notifyButton: {
+                    enable: true,
+                },
+            });
+        });
+    </script>
     <script src="/js/script.js" defer></script>
 </head>
 
